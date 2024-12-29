@@ -1,0 +1,29 @@
+/* Gaya Dasar */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #282c34;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+/* Elemen yang Dianimasikan */
+.animated-text {
+    font-size: 2rem;
+    font-weight: bold;
+    animation: slide 2s infinite alternate ease-in-out;
+}
+
+/* Aturan Animasi */
+@keyframes slide {
+    from {
+        transform: translateX(-50px);
+    }
+    to {
+        transform: translateX(50px);
+    }
+}
